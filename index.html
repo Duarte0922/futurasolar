@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUTURA SOLAR - Energia Sustentável para um Futuro Melhor</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#2cb67d", secondary: "#1e88e5" },
+            borderRadius: {
+              button: "8px",
+            },
+            fontFamily: {
+              arialblack: ['"Arial Black"', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Remix Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+
+    <!-- Estilos extras -->
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+
+    <!-- Header -->
+    <header class="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <span class="font-arialblack text-primary text-2xl">FUTURA SOLAR</span>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-800 font-medium hover:text-primary">Início</a>
+          <a href="#sobre" class="text-gray-800 font-medium hover:text-primary">Sobre</a>
+          <a href="#servicos" class="text-gray-800 font-medium hover:text-primary">Serviços</a>
+          <a href="#projetos" class="text-gray-800 font-medium hover:text-primary">Projetos</a>
+          <a href="#contato" class="text-gray-800 font-medium hover:text-primary">Contato</a>
+        </nav>
+
+        <a href="#contato" class="hidden md:flex bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-opacity-90">
+          Solicitar Orçamento
+        </a>
+
+        <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full pt-24 relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-10"
+      ></div>
+      <div
+        style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20solar%20panels%20installation%20on%20a%20rooftop%20with%20beautiful%20blue%20sky%20background%2C%20high-quality%20photorealistic%20image%20showing%20clean%20energy%20technology%2C%20sunlight%20reflecting%20off%20the%20panels%2C%20professional%20installation%20with%20perfect%20alignment%2C%20sustainable%20energy%20concept%20with%20vibrant%20colors%20and%20sharp%20details&width=1600&height=800&seq=1&orientation=landscape'); background-size: cover; background-position: center;"
+        class="absolute inset-0"
+      ></div>
+   <!-- Imagem de fundo -->
+      <div
+        style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20solar%20panels%20installation...'); background-size: cover; background-position: center;"
+        class="absolute inset-0"
+      ></div>
+
+      <!-- Conteúdo -->
+      <div class="container mx-auto px-6 py-20 md:py-32 relative z-20">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+          
+          <!-- Texto -->
+          <div class="w-full md:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-arialblack">
+              Energia Sustentável para um Futuro Melhor
+            </h1>
+            <p class="text-xl text-gray-700 mb-8">
+              Bem vindo ao futuro!!! Transforme sua casa ou empresa com soluções
+              de energia solar que economizam dinheiro e protegem o meio ambiente.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#contato" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 text-center">
+                Solicite seu Orçamento
+              </a>
+              <a href="#servicos" class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white text-center">
+                Nossos Serviços
+              </a>
+            </div>
+          </div>
+
+          <!-- Logo -->
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <img src="imagens/logo2.png" alt="Logo Futura Solar" class="w-100 md:w-220" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Benefícios da Energia Solar
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Descubra como a energia solar pode transformar sua vida com
+            economia, sustentabilidade e tecnologia de ponta.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Benefit 1 -->
+          <div
+            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-money-dollar-circle-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Economia
+            </h3>
+            <p class="text-gray-600 text-center">
+              Reduza sua conta de luz em até 95% e obtenha retorno do
+              investimento em aproximadamente 5 anos.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div
+            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-plant-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Sustentabilidade
+            </h3>
+            <p class="text-gray-600 text-center">
+              Contribua para um planeta mais limpo reduzindo a emissão de CO₂ e
+              utilizando energia 100% renovável.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div
+            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-device-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Tecnologia
+            </h3>
+            <p class="text-gray-600 text-center">
+              Utilizamos equipamentos de última geração com monitoramento remoto
+              e alta eficiência energética.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div
+            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-shield-check-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Durabilidade
+            </h3>
+            <p class="text-gray-600 text-center">
+              Nossos sistemas possuem garantia de até 25 anos e são projetados
+              para durar mais de três décadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="w-full lg:w-1/2">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://readdy.ai/api/search-image?query=Professional%20team%20of%20solar%20energy%20engineers%20and%20technicians%20working%20together%20in%20an%20office%20environment%2C%20discussing%20solar%20panel%20installation%20plans%2C%20using%20computers%20with%20technical%20drawings%2C%20modern%20office%20with%20solar%20panel%20models%2C%20bright%20and%20clean%20workspace%2C%20team%20wearing%20professional%20attire%20with%20company%20logo&width=800&height=600&seq=2&orientation=landscape"
+                alt="Equipe Futura Solar"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Sobre a Futura Solar
+            </h2>
+            <p class="text-gray-600 mb-6">
+              A Futura Solar nasceu com a missão de democratizar o acesso à
+              energia limpa e renovável no Brasil. Desde 2018, temos ajudado
+              famílias e empresas a reduzirem seus custos com energia elétrica,
+              enquanto contribuem para um planeta mais sustentável.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Nossa equipe é formada por engenheiros e técnicos altamente
+              qualificados, com vasta experiência no setor de energia solar
+              fotovoltaica. Trabalhamos apenas com equipamentos de marcas
+              reconhecidas mundialmente, garantindo a máxima eficiência e
+              durabilidade dos sistemas que instalamos.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 mt-8">
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-customer-service-2-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Suporte</h4>
+                  <p class="text-sm text-gray-600">Atendimento 24/7</p>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-medal-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Qualidade</h4>
+                  <p class="text-sm text-gray-600">Certificação ISO 9001</p>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-team-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Equipe</h4>
+                  <p class="text-sm text-gray-600">
+                    Profissionais certificados
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-tools-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Garantia</h4>
+                  <p class="text-sm text-gray-600">Até 25 anos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Serviços</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Oferecemos soluções completas em energia solar para residências,
+            comércios e indústrias.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Residential%20solar%20panel%20installation%20on%20a%20modern%20house%20rooftop%2C%20clean%20and%20professional%20installation%2C%20sunny%20day%20with%20blue%20sky%2C%20high-quality%20photorealistic%20image%20showing%20solar%20panels%20perfectly%20aligned%2C%20residential%20neighborhood%20visible%20in%20background%2C%20high-end%20finish&width=600&height=400&seq=3&orientation=landscape"
+                alt="Instalação Residencial"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Instalação Residencial
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Transforme sua casa em uma fonte de energia limpa e renovável,
+                reduzindo significativamente sua conta de luz.
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Projeto personalizado</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Instalação profissional</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Monitoramento remoto</span>
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="inline-block text-primary font-medium hover:underline"
+                >Saiba Mais <i class="ri-arrow-right-line align-middle ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Commercial%20solar%20panel%20installation%20on%20a%20business%20building%20rooftop%2C%20large%20scale%20professional%20installation%2C%20multiple%20rows%20of%20solar%20panels%2C%20industrial%20setting%2C%20sunny%20day%20with%20blue%20sky%2C%20high-quality%20photorealistic%20image%20showing%20solar%20panels%20perfectly%20aligned%2C%20urban%20environment%20visible%20in%20background&width=600&height=400&seq=4&orientation=landscape"
+                alt="Instalação Comercial"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Instalação Comercial
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Reduza os custos operacionais da sua empresa e melhore sua
+                imagem corporativa com energia solar.
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Análise de consumo</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Projeto sob medida</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Manutenção preventiva</span>
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="inline-block text-primary font-medium hover:underline"
+                >Saiba Mais <i class="ri-arrow-right-line align-middle ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Industrial%20solar%20farm%20installation%20with%20large%20arrays%20of%20solar%20panels%20in%20an%20open%20field%2C%20professional%20large-scale%20installation%2C%20sunny%20day%20with%20blue%20sky%2C%20high-quality%20photorealistic%20image%20showing%20hundreds%20of%20solar%20panels%20perfectly%20aligned%20in%20rows%2C%20rural%20environment%2C%20mountains%20visible%20in%20background&width=600&height=400&seq=5&orientation=landscape"
+                alt="Usinas Solares"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Usinas Solares
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Projetos de grande porte para indústrias e fazendas solares com
+                alta capacidade de geração.
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Estudos de viabilidade</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Engenharia especializada</span>
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-primary mr-2"></i>
+                  <span>Gestão completa do projeto</span>
+                </li>
+              </ul>
+              <a
+                href="#contato"
+                class="inline-block text-primary font-medium hover:underline"
+                >Saiba Mais <i class="ri-arrow-right-line align-middle ml-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="projetos" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Por Que Escolher a Futura Solar
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Somos referência no mercado de energia solar fotovoltaica, com
+            centenas de clientes satisfeitos em todo o Brasil.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="grid grid-cols-2 gap-6 mb-10">
+              <div class="text-center p-6 bg-white shadow-md rounded">
+                <div class="text-4xl font-bold text-primary mb-2">500+</div>
+                <p class="text-gray-600">Instalações realizadas</p>
+              </div>
+
+              <div class="text-center p-6 bg-white shadow-md rounded">
+                <div class="text-4xl font-bold text-primary mb-2">15 MW</div>
+                <p class="text-gray-600">Potência instalada</p>
+              </div>
+
+              <div class="text-center p-6 bg-white shadow-md rounded">
+                <div class="text-4xl font-bold text-primary mb-2">98%</div>
+                <p class="text-gray-600">Clientes satisfeitos</p>
+              </div>
+
+              <div class="text-center p-6 bg-white shadow-md rounded">
+                <div class="text-4xl font-bold text-primary mb-2">25 anos</div>
+                <p class="text-gray-600">Garantia dos equipamentos</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow-md">
+              <div class="flex items-start mb-4">
+                <div class="flex-shrink-0 mr-4">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"
+                  >
+                    <i class="ri-double-quotes-l ri-lg text-primary"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-gray-600 italic mb-4">
+                    "A instalação dos painéis solares pela Futura Solar foi um
+                    dos melhores investimentos que fiz para minha casa. O
+                    processo foi rápido, limpo e a equipe extremamente
+                    profissional. Minha conta de luz reduziu em mais de 90%!"
+                  </p>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Ricardo Oliveira
+                    </h4>
+                    <p class="text-sm text-gray-500">
+                      Cliente Residencial - São Paulo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded overflow-hidden shadow-md">
+              <img
+                src="https://readdy.ai/api/search-image?query=Completed%20solar%20panel%20installation%20on%20a%20modern%20house%20rooftop%2C%20sunny%20day%2C%20high-quality%20photorealistic%20image%20showing%20perfectly%20installed%20solar%20system%2C%20residential%20setting%20with%20nice%20landscaping%2C%20clean%20and%20professional%20finish&width=400&height=300&seq=6&orientation=landscape"
+                alt="Projeto Residencial"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="rounded overflow-hidden shadow-md">
+              <img
+                src="https://readdy.ai/api/search-image?query=Commercial%20building%20with%20solar%20panels%20installed%20on%20flat%20roof%2C%20urban%20setting%2C%20business%20district%2C%20high-quality%20photorealistic%20image%20showing%20large%20commercial%20solar%20installation%2C%20professional%20finish%2C%20sunny%20day%20with%20blue%20sky&width=400&height=300&seq=7&orientation=landscape"
+                alt="Projeto Comercial"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="rounded overflow-hidden shadow-md">
+              <img
+                src="https://readdy.ai/api/search-image?query=Solar%20panels%20installed%20on%20industrial%20warehouse%20roof%2C%20large-scale%20installation%2C%20industrial%20zone%2C%20high-quality%20photorealistic%20image%20showing%20extensive%20solar%20array%2C%20professional%20installation%20with%20perfect%20alignment&width=400&height=300&seq=8&orientation=landscape"
+                alt="Projeto Industrial"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="rounded overflow-hidden shadow-md">
+              <img
+                src="https://readdy.ai/api/search-image?query=Ground-mounted%20solar%20panel%20array%20in%20rural%20setting%2C%20large%20solar%20farm%20installation%2C%20agricultural%20land%20with%20solar%20panels%2C%20high-quality%20photorealistic%20image%20showing%20rows%20of%20solar%20panels%2C%20professional%20installation%20in%20countryside&width=400&height=300&seq=9&orientation=landscape"
+                alt="Usina Solar"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <h3 class="text-xl font-semibold text-gray-900 mb-8">
+            Nossas Certificações e Parcerias
+          </h3>
+          <div class="flex flex-wrap justify-center gap-10">
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="ri-award-fill ri-3x text-gray-400"></i>
+              </div>
+              <span class="text-sm text-gray-600 mt-2">ISO 9001</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="ri-medal-fill ri-3x text-gray-400"></i>
+              </div>
+              <span class="text-sm text-gray-600 mt-2">ABNT</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="ri-building-fill ri-3x text-gray-400"></i>
+              </div>
+              <span class="text-sm text-gray-600 mt-2">CREA</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="ri-government-fill ri-3x text-gray-400"></i>
+              </div>
+              <span class="text-sm text-gray-600 mt-2">INMETRO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">
+          Pronto para economizar e contribuir com o meio ambiente?
+        </h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+          Entre em contato agora mesmo e solicite um orçamento gratuito para sua
+          residência ou empresa.
+        </p>
+        <a
+          href="#contato"
+          class="inline-block bg-white text-primary px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap"
+        >
+          Solicitar Orçamento Gratuito
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-16">
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Entre em Contato
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Preencha o formulário abaixo e nossa equipe entrará em contato com
+              você em até 24 horas para fornecer mais informações e um orçamento
+              personalizado.
+            </p>
+
+            <form class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Nome Completo</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Digite seu nome completo"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >E-mail</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Telefone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="(XX) XXXXX-XXXX"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="type"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Tipo de Instalação</label
+                >
+                <div class="relative">
+                  <select
+                    id="type"
+                    class="w-full px-4 py-3 border border-gray-300 rounded appearance-none focus:border-primary focus:ring-1 focus:ring-primary pr-8"
+                  >
+                    <option value="" selected disabled>
+                      Selecione uma opção
+                    </option>
+                    <option value="residencial">Residencial</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="rural">Rural</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line text-gray-400"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Mensagem</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="Descreva seu projeto ou dúvidas..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <div class="h-64 md:h-96 bg-gray-200 rounded overflow-hidden mb-8">
+              <div
+                id="map"
+                class="w-full h-full"
+                style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-map-pin-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Endereço</h4>
+                  <p class="text-gray-600">
+                    Av. Paulista, 1578, Bela Vista<br />São Paulo - SP,
+                    01310-200
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-phone-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Telefone</h4>
+                  <p class="text-gray-600">
+                    (11) 3456-7890<br />(11) 98765-4321
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-mail-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">E-mail</h4>
+                  <p class="text-gray-600">
+                    contato@futurasolar.com.br<br />vendas@futurasolar.com.br
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4"
+                >
+                  <i class="ri-time-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">
+                    Horário de Atendimento
+                  </h4>
+                  <p class="text-gray-600">
+                    Segunda a Sexta: 8h às 18h<br />Sábado: 9h às 13h
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="font-semibold text-gray-900 mb-4">Redes Sociais</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary hover:text-white transition-colors text-primary"
+                >
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary hover:text-white transition-colors text-primary"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary hover:text-white transition-colors text-primary"
+                >
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary hover:text-white transition-colors text-primary"
+                >
+                  <i class="ri-youtube-fill"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary hover:text-white transition-colors text-primary"
+                >
+                  <i class="ri-whatsapp-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="#" class="inline-block mb-6">
+              <span class="font-['Pacifico'] text-white text-2xl"
+                >FUTURA SOLAR</span
+              >
+            </a>
+            <p class="text-gray-400 mb-6">
+              Energia sustentável para um futuro melhor. Transformando o sol em
+              economia e sustentabilidade para sua casa ou empresa.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Links Rápidos</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Sobre Nós</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projetos"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Projetos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Serviços</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Instalação Residencial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Instalação Comercial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Usinas Solares</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Manutenção</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Consultoria</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contato</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="ri-map-pin-line mr-3 mt-1"></i>
+                <span class="text-gray-400"
+                  >Av. Paulista, 1578, Bela Vista<br />São Paulo - SP,
+                  01310-200</span
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="ri-phone-line mr-3"></i>
+                <span class="text-gray-400">(11) 3456-7890</span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-whatsapp-line mr-3"></i>
+                <span class="text-gray-400">(11) 98765-4321</span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-mail-line mr-3"></i>
+                <span class="text-gray-400">contato@futurasolar.com.br</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-gray-800 text-center">
+          <div class="flex justify-center space-x-6 mb-6">
+            <div class="flex items-center">
+              <i class="ri-visa-fill ri-lg mr-2 text-gray-400"></i>
+              <span class="text-gray-400">Visa</span>
+            </div>
+            <div class="flex items-center">
+              <i class="ri-mastercard-fill ri-lg mr-2 text-gray-400"></i>
+              <span class="text-gray-400">Mastercard</span>
+            </div>
+            <div class="flex items-center">
+              <i class="ri-paypal-fill ri-lg mr-2 text-gray-400"></i>
+              <span class="text-gray-400">PayPal</span>
+            </div>
+            <div class="flex items-center">
+              <i class="ri-bank-card-fill ri-lg mr-2 text-gray-400"></i>
+              <span class="text-gray-400">Boleto</span>
+            </div>
+          </div>
+
+          <p class="text-gray-500 text-sm">
+            © 2025 FUTURA SOLAR. Todos os direitos reservados.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4 text-sm text-gray-500">
+            <a href="#" class="hover:text-gray-400 transition-colors"
+              >Política de Privacidade</a
+            >
+            <a href="#" class="hover:text-gray-400 transition-colors"
+              >Termos de Uso</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const menuButton = document.querySelector(".md\\:hidden");
+        const mobileMenu = document.createElement("div");
+        mobileMenu.className =
+          "fixed inset-0 bg-white z-50 flex flex-col p-6 transform translate-x-full transition-transform duration-300 ease-in-out";
+        mobileMenu.innerHTML = `
+                      <div class="flex justify-between items-center mb-8">
+                          <span class="font-['Pacifico'] text-primary text-2xl">FUTURA SOLAR</span>
+                          <button class="w-10 h-10 flex items-center justify-center text-gray-700">
+                              <i class="ri-close-line ri-lg"></i>
+                          </button>
+                      </div>
+                      <nav class="flex flex-col space-y-6">
+                          <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors text-lg">Início</a>
+                          <a href="#sobre" class="text-gray-800 font-medium hover:text-primary transition-colors text-lg">Sobre</a>
+                          <a href="#servicos" class="text-gray-800 font-medium hover:text-primary transition-colors text-lg">Serviços</a>
+                          <a href="#projetos" class="text-gray-800 font-medium hover:text-primary transition-colors text-lg">Projetos</a>
+                          <a href="#contato" class="text-gray-800 font-medium hover:text-primary transition-colors text-lg">Contato</a>
+                      </nav>
+                      <div class="mt-auto">
+                          <a href="#contato" class="block w-full bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-colors text-center whitespace-nowrap">
+                              Solicitar Orçamento
+                          </a>
+                      </div>
+                  `;
+        document.body.appendChild(mobileMenu);
+
+        menuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("translate-x-full");
+        });
+
+        mobileMenu.querySelector("button").addEventListener("click", function () {
+          mobileMenu.classList.add("translate-x-full");
+        });
+
+        // Close mobile menu when clicking on links
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("translate-x-full");
+          });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
